@@ -1,6 +1,6 @@
 while True:
     testletter = input('Phrase: ')
-    counter = len(testletter)*
+    counter = len(testletter)
 
     for i in range (0, counter):
         print(testletter[i])
