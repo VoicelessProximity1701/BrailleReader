@@ -1,6 +1,20 @@
+import RPi.GPIO as GPIO
+import time
+
+#def button_callback2(channel):
+ #   print('Prev. letter')
+    
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(14,GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 textin = input('Enter word: ')
 lengthoftextin = len(textin)
 c = 0
+
+def button_callback(channel):
+    global c
+    c = c+1
+
 while c < lengthoftextin:
     letter = textin[c]
     checkletnum = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -8,7 +22,11 @@ while c < lengthoftextin:
     for i in range(0, 25):
         if letter.lower() == checkletnum[i]:
             print('Letter = '+ checkletnum[i] + '; Braille: '+ corresponding_braille[i])
-            c = c + 1
+            if not 'event' in locals():
+                event = GPIO.add_event_detect(14, GPIO.RISING, callback=button_callback)
+            else:
+                time.sleep(0.5)
         if c > lengthoftextin:
             break
+GPIO.cleanup()
         
