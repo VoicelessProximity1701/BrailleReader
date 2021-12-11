@@ -1,7 +1,11 @@
 while True:
     textin = input('Enter word: ')
     lengthoftextin = len(textin)
+<<<<<<< HEAD
     count1 = 0
+=======
+
+>>>>>>> 73942f7c6647326a4230b57f8be32002ce9b543a
     for i in range(0, lengthoftextin):
         letter = textin[i]
         checkletnum = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -9,3 +13,4 @@ while True:
         for i in range(0, 25):
             if letter.lower() == checkletnum[i]:
                     print('Corresponding braille: ' + corresponding_braille[i])
+                print('Corresponding braille: ' + corresponding_braille[i])
