@@ -10,6 +10,7 @@ while c < lengthoftextin:
             temporary_letter = corresponding_braille[i]
             for x in range(6):
                 print(temporary_letter[x])
+                GPIO.OUTPUT(x+1, temporary_letter(x))
             print('Letter = '+ checkletnum[i] + '; Braille: '+ corresponding_braille[i])
             c = c + 1
         if c > lengthoftextin:
