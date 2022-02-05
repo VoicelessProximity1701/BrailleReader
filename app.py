@@ -11,7 +11,9 @@ while c < lengthoftextin:
             current_letter_as_braille = corresponding_braille[i]
             for i in range(6):
                 if current_letter_as_braille[i] == 1:
-                    GPIO.OUTPUT(current_letter_as_braille[i+1])
+                    print('GPIO ' + (i+1) + 'Up')
+                    #GPIO.OUTPUT(current_letter_as_braille[i+1])
+
             c = c + 1
         if c > lengthoftextin:
             break
