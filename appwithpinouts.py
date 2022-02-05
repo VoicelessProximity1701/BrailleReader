@@ -1,3 +1,15 @@
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(2, GPIO.OUT)
+GPIO.setup(3, GPIO.OUT)
+GPIO.setup(4, GPIO.OUT)
+GPIO.setup(5, GPIO.OUT)
+GPIO.setup(6, GPIO.OUT)
+GPIO.setup(7, GPIO.OUT)
+
 textin = input('Enter word: ')
 lengthoftextin = len(textin)
 c = 0
