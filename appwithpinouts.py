@@ -10,6 +10,13 @@ GPIO.setup(5, GPIO.OUT)    #
 GPIO.setup(6, GPIO.OUT)    #
 GPIO.setup(7, GPIO.OUT)    #
 
+GPIO.output(2, 0)
+GPIO.output(3, 0)
+GPIO.output(4, 0)   # CLEAR THE PINS
+GPIO.output(5, 0)
+GPIO.output(6, 0)
+GPIO.output(7, 0)
+
 textin = input('Enter word: ')    # take an input from the user to enter a word
 lengthoftextin = len(textin)        # determine the length of the input string
 c = 0    # initialise a counter variable to use as a stop in a loop
@@ -20,11 +27,12 @@ while c < lengthoftextin:
     for i in range(26):    # initialise a loop to go through all the letters of the alphabet
         if letter.lower() == checkletnum[i]:   # when the character stored in letter is found...
             temporary_letter = corresponding_braille[i]  # assign a variable to hold the corresponding braille value
-            for x in range(6):  # go through all GPIO pins
+            for x in range(6): # go through all GPIO pins
                 int_temp_letter = int(temporary_letter[x])  # assign a variable to convert each character in the braille value to an integer
                 GPIO.output(int(x+2), int_temp_letter) # output the GPIO value
-                time.sleep(3)    # pause for 3 seconds
+                #time.sleep(1.5)    # pause for 3 seconds
             print('Letter = '+ checkletnum[i] + '; Braille: '+ corresponding_braille[i])   # print the results to terminal
+            time.sleep(1)
             c = c + 1   # change the counter by 1
         if c > lengthoftextin:
             break     # if the last letter of the word inputted has been represented, stop the program
