@@ -1,9 +1,6 @@
-## Welcome to GitHub Pages
+## Software for Braille Reader
 
-You can use the [editor on GitHub](https://github.com/VoicelessProximity1701/BrailleReader/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+Welcome to the homepage for everything related to the simplistic Braille Reader! Use the download buttons to download my code.
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
