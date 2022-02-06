@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO     # import GPIO library to allow control of GPIOs
+from EmulatorGUI import GPIO     # import GPIO library to allow control of GPIOs
 import time              # import the time library for pauses
 
 GPIO.setmode(GPIO.BCM)     #
