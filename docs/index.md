@@ -1,7 +1,7 @@
 ## Software for Braille Reader
 
 Welcome to the homepage for everything related to the simplistic Braille Reader! Use the download buttons to download my code.
-### Markdown
+### My Code
 
 View a copy of my code below:
 
