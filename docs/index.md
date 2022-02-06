@@ -5,7 +5,7 @@ Welcome to the homepage for everything related to the simplistic Braille Reader!
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+```About
 Syntax highlighted code block
 
 # Header 1
