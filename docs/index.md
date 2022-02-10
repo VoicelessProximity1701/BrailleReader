@@ -53,12 +53,9 @@ GPIO.output(6, 0)
 GPIO.output(7, 0)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/VoicelessProximity1701/BrailleReader/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+To run this code, construct the circuit (with Raspberry Pi) and use GPIO pins {2, 3, 4, 5, 6, 7}. These should be arranged as follows:
+ ### 2 3
+ ### 4 5
+ ### 6 7
+ 
+Having trouble? Submit an Issue in Github!
